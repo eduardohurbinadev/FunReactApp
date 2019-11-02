@@ -1,6 +1,8 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/layout/Navbar';
+import Users from './components/users/Users'; 
+
 class App extends Component {
 
   //LifeCycle Method which is actually required
@@ -10,6 +12,9 @@ class App extends Component {
       <div className="App">
         {/* //Props are properties that you can pass in to a component */}
         <Navbar/>
+        <div className="container">
+        <Users/>
+        </div>
       </div>
     );
   }
